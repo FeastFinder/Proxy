@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 
 const port = 3000;
+require('newrelic');
 
 
 app.use('/:id/', express.static('public'));
